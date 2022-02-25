@@ -20,13 +20,13 @@ const initialState = { count: 0 }
 function reducer(state: CounterState, action: CounterAction) {
     switch (action.type) {
         case 'increment':
-        return { count: state.count + action.payload }
+            return { count: state.count + action.payload }
         case 'decrement':
-        return { count: state.count - action.payload }
+            return { count: state.count - action.payload }
         case 'reset':
-        return initialState
+            return initialState
         default:
-        return state
+            return state
     }
 }
 
